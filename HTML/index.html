@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjetMdsIntJS</title>
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
 </head>
 <body>
     <div id="app">
         <header>
             <ul>
                 <li>
-                    <router-link to="/home">Acceuil</router-link>
+                    <router-link to="/">Acceuil</router-link>
                 </li>
                 <li>
                     <router-link to="/articles">Articles</router-link>
@@ -22,6 +23,11 @@
                 </li>
             </ul>
         </header> 
+
+
+        <main>
+            <router-view> </router-view>
+        </main>
 
 
 
@@ -35,6 +41,6 @@
 
     </div>
 
-    <script src="./main.js"></script>
+    <script src="../JS/main.js"></script>
 </body>
 </html>

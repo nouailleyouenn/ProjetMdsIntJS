@@ -15,7 +15,7 @@ const creation= {
             }
             else { 
             NewArticle = {name: this.name, categorie: this.categorie, text: this.text, auteur: this.auteur, url: this.url, image: this.image  }
-            this.$emit('formsubmitted', NewArticle)
+            this.$emit("AddArticle",NewArticle )
             this.name=''
             this.categorie=''
             this.text=''

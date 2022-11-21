@@ -1,25 +1,10 @@
-const Home = {    
-    data() {
-        return {
-            articles: [
-                { name: "na", catégorie: "na", texte: "na", auteur: "na", url: "na", image: "na" },
-                { name: "na2", catégorie: "na2", texte: "na2", auteur: "na2", url: "na2", image: "na2" }
-            ],
-        };
-
-    },
-    methods:{
-        formsubmitted(article){
-            this.articles.push(article)
-        },
-
-    },
+const Home = {
     template: `
 
 <div>
     Home
 </div>
-<div id="listeArticlesHome">
+<div id="listeArticlesHome" v-on="ListeArticles">
     <ul>
     <li v-for="article in articles">
         {{article.name}}
@@ -34,4 +19,15 @@ const Home = {
 </div>
 
 
-`};
+`,
+props : {
+    articles:{type:Object},
+
+
+}
+
+
+
+    };
+
+

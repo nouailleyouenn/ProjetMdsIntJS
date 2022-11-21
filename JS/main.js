@@ -182,11 +182,13 @@ app.mount("#app")
 
 
 
+
 const routes =[
-    { path: '/', component: Home }, //chemin de la page d'acceuil
+    { path: '/', component: Home, props : {articles:false} }, //chemin de la page d'acceuil
     { path: '/articles', component: Articles }, //chemin de la page artciles
     { path: '/create', component: creation }, //chemin de la page de création d'articles
     //{path: '/listeArticles',component:ArticlesListe}  //chemin de la page de l'affichage d'articles
+    
 ]
 
 const router = VueRouter.createRouter({
@@ -194,7 +196,40 @@ const router = VueRouter.createRouter({
     routes,
 })
 
-const app = Vue.createApp({})
+const articles ={
+    articles: [
+        { name: "na", catégorie: "na", texte: "na", auteur: "na", url: "na", image: "na" },
+        { name: "na2", catégorie: "na2", texte: "na2", auteur: "na2", url: "na2", image: "na2" }
+    ],
+}
+
+const app = Vue.createApp({
+    data() {
+        return {
+            
+        };
+
+    },
+    methods:{
+        AddArticles(NewArticle){
+            this.articles.push(NewArticle)
+
+        },
+        formsubmitted(article){
+            this.articles.push(article)
+        },
+
+        
+
+    },
+    props : {
+        articles: [
+            { name: "na", catégorie: "na", texte: "na", auteur: "na", url: "na", image: "na" },
+            { name: "na2", catégorie: "na2", texte: "na2", auteur: "na2", url: "na2", image: "na2" }
+        ],
+    }
+})
+
 
 app.use(router)
 app.mount("#app")

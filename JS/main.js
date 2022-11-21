@@ -180,13 +180,13 @@ app.mount("#app")
 
 */
 
-import * from "./home.js"
+
 
 const routes =[
     { path: '/', component: Home }, //chemin de la page d'acceuil
     { path: '/articles', component: Articles }, //chemin de la page artciles
     { path: '/create', component: creation }, //chemin de la page de création d'articles
-    {path: '/listeArticles',component:ArticlesListe}  //chemin de la page de l'affichage d'articles
+    //{path: '/listeArticles',component:ArticlesListe}  //chemin de la page de l'affichage d'articles
 ]
 
 const router = VueRouter.createRouter({

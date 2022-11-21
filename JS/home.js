@@ -1,17 +1,17 @@
-export default {    
+const Home = {    
     data() {
         return {
             articles: [
                 { name: "na", catégorie: "na", texte: "na", auteur: "na", url: "na", image: "na" },
                 { name: "na2", catégorie: "na2", texte: "na2", auteur: "na2", url: "na2", image: "na2" }
-            ]
-        }
+            ],
+        };
 
     },
     methods:{
         formsubmitted(article){
             this.articles.push(article)
-        }
+        },
 
     },
     template: `
@@ -34,4 +34,4 @@ export default {
 </div>
 
 
-`}
+`};

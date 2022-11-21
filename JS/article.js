@@ -1,8 +1,8 @@
-app.component('articlePage', {
+const Articles= {
     template: `
 
 <div>
     Articles
 </div>
 
-`})
+`}

@@ -1,4 +1,4 @@
-app.component('createPage', {
+const creation= {
     methods: {
         onSubmit(){
             if (this.name=="")  {
@@ -56,4 +56,4 @@ app.component('createPage', {
                 <input class="button" type="submit" value="Valider"  >
             </form>
     
-    `})
+    `}

@@ -150,7 +150,7 @@ const routes = [
                 component: ProductsDetails
             }
         ],
-    },*//*
+    },
     { path: '/', component: Home }, //chemin de la page d'acceuil
     { path: '/articles', component: Articles }, //chemin de la page artciles
     { path: '/create', component: creation }, //chemin de la page de création d'articles
@@ -159,8 +159,6 @@ const routes = [
 
 
 
-
-/*
 
 
 const router = VueRouter.createRouter({

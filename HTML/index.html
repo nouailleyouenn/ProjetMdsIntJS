@@ -11,16 +11,14 @@
 <body>
     <div id="app">
         <header>
-            <router-link to="/">Acceuil</router-link>
-            <router-link to="/articles">Articles</router-link>
-            <router-link to="/create">Création</router-link>
-            <router-link to="/listeArticles">Liste d'article</router-link>
+            <router-link to="/" class="AcceuilHeader">Acceuil</router-link>  <!--Bouton Acceuil du header-->
+            <router-link to="/create" class="CreationHeader">Création</router-link> <!--Bouton Creation du header-->
+
         </header> 
 
 
         <main>
-            <router-view @add-article="addarticle"> </router-view>
-            <script>console.log("test1")</script>
+            <router-view @add-article="addarticle"> </router-view> <!--Affichage de la page-->
             
             
         </main>
@@ -37,7 +35,6 @@
 
     </div>
     <script src="../JS/articlePage.js"></script>
-    <script src="../JS/article.js"></script>
     <script src="../JS/creation.js"></script>
     <script src="../JS/home.js"></script>
     <script src="../JS/main.js"></script>

@@ -6,8 +6,8 @@ const Home = {
 </div>
 <div id="listeArticlesHome" v-on="ListeArticles">
     <ul>
-    <li v-for="article in articles">
-        {{article.name}}
+    <li v-for="article in articles" >
+        <router-link :to="{name:'articleDesc'},params:{name:el.name}">{{article.name}}</router-link>
     </li>
     </ul>
 </div>

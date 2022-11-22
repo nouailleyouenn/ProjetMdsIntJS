@@ -14,8 +14,11 @@ const creation= {
                 alert("Auteur manquant ! merci de vérifier les informations.")
             }
             else { 
+            console.log(this.name,this.categorie,this.text,this.auteur,this.url,this.image)
             NewArticle = {name: this.name, categorie: this.categorie, text: this.text, auteur: this.auteur, url: this.url, image: this.image  }
-            this.$emit("AddArticle",NewArticle )
+            console.log(NewArticle)
+            this.$emit("add-article",NewArticle )
+            console.log(NewArticle)
             this.name=''
             this.categorie=''
             this.text=''

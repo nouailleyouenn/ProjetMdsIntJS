@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjetMdsIntJS</title>
+    <title>ProjetMdsIntJS Encyclopédie</title>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
         <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <div id="app">
-        <header>    
-            <router-link to="/">Acceuil</router-link>
-            <router-link to="/articles">Articles</router-link>
-            <router-link to="/create">Création</router-link>
-            <router-link to="/listeArticles">Liste d'article</router-link>
+        <header>   
+        <ul>
+            <li><router-link to="/">Acceuil</router-link></li>
+            <li><router-link to="/articles">Articles</router-link></li>
+            <li><router-link to="/create">Création</router-link></li>
+            <li><router-link to="/listeArticles">Liste d'article</router-link></li>
+        </ul>
         </header> 
 
- </ul>
         <main>
+            <h1>L'encyclopédie</h1> 
+            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
             <router-view @add-article="addarticle"> </router-view> <!--Affichage de la page-->
             
             

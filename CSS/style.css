@@ -1,16 +1,39 @@
 header  {
-    background-color: rgb(48, 138, 141);
+    background-color: rgb(158, 158, 154);
+    display: flex;
+    justify-content: center;
 
 }
 li{
-    min-width: 120px;
+    min-width: 210px;
 }
-menu, ul {
-    display: flex;
+ul {
     list-style: none;
     padding: 20px;
     margin: 0;
-  }
+    display: flex;
+ }
+
 #app{
-    color: red;
+    color: rgb(116, 117, 119);
 }
+html{
+    background-color: rgb(224, 210, 210);
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover
+{
+    color : black;
+}
+p{
+    text-align: center;
+    font-family: monospace;
+}
+

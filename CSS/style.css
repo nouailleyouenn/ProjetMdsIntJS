@@ -1,5 +1,7 @@
 header  {
-    background-color: rgb(48, 138, 141);
+ 
+
+
 
 }
 li{
@@ -7,6 +9,7 @@ li{
 }
 menu, ul {
     display: flex;
+    
     list-style: none;
     padding: 20px;
     margin: 0;
@@ -14,3 +17,13 @@ menu, ul {
 #app{
     color: red;
 }
+/*
+#header-bouton{
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+}*/
+

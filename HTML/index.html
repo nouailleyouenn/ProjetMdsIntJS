@@ -11,19 +11,18 @@
 </head>
 <body>
     <div id="app">
-        <header>   
-        <ul>
-            <li><router-link to="/">Acceuil</router-link></li>
-            <li><router-link to="/articles">Articles</router-link></li>
-            <li><router-link to="/create">Création</router-link></li>
-            <li><router-link to="/listeArticles">Liste d'article</router-link></li>
-        </ul>
+        <header>    
+            <router-link to="/">Acceuil</router-link>
+       
+            <router-link to="/create">Création</router-link>
+            
         </header> 
 
         <main>
             <h1>L'encyclopédie</h1> 
             <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
             <router-view @add-article="addarticle"> </router-view> <!--Affichage de la page-->
+            
             
             
         </main>

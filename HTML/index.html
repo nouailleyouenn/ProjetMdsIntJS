@@ -11,23 +11,18 @@
 </head>
 <body>
     <div id="app">
-        <header>
-
-<ul class="menu">
-
-          <li> <router-link to="/">Acceuil</router-link></li> 
-
-          <li> <router-link to="/articles">Articles</router-link></li> 
-
-          <li> <router-link to="/create">Création</router-link></li> 
-
-          <li><router-link to="/listeArticles">Liste d'article</router-link></li> 
-
+        <header>    
+            <router-link to="/">Acceuil</router-link>
+            <router-link to="/articles">Articles</router-link>
+            <router-link to="/create">Création</router-link>
+            <router-link to="/listeArticles">Liste d'article</router-link>
         </header> 
 
  </ul>
         <main>
-            <router-view> </router-view>
+            <router-view @add-article="addarticle"> </router-view> <!--Affichage de la page-->
+            
+            
         </main>
 
 
@@ -42,7 +37,10 @@
 
 
     </div>
-
+    <script src="../JS/articlePage.js"></script>
+    <script src="../JS/creation.js"></script>
+    <script src="../JS/home.js"></script>
     <script src="../JS/main.js"></script>
+    
 </body>
 </html>

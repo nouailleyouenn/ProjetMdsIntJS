@@ -1,0 +1,16 @@
+header  {
+    background-color: rgb(48, 138, 141);
+
+}
+li{
+    min-width: 120px;
+}
+menu, ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+#app{
+    color: red;
+}

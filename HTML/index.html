@@ -7,22 +7,25 @@
     <title>ProjetMdsIntJS</title>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
+        <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <div id="app">
-        <header>
-            <router-link to="/" class="AcceuilHeader">Acceuil</router-link>  <!--Bouton Acceuil du header-->
-            <router-link to="/create" class="CreationHeader">Création</router-link> <!--Bouton Creation du header-->
-
+        <header>    
+            <router-link to="/">Acceuil</router-link>
+            <router-link to="/articles">Articles</router-link>
+            <router-link to="/create">Création</router-link>
+            <router-link to="/listeArticles">Liste d'article</router-link>
         </header> 
 
-
+ </ul>
         <main>
             <router-view @add-article="addarticle"> </router-view> <!--Affichage de la page-->
             
             
             
         </main>
+
 
 
 

@@ -3,15 +3,18 @@ header  {
     display: flex;
     justify-content: center;
 
+
 }
 li{
-    min-width: 210px;
+
+
 }
 ul {
     list-style: none;
     padding: 20px;
     margin: 0;
     display: flex;
+    
  }
 
 #app{
@@ -22,11 +25,15 @@ html{
 }
 h1{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;
+    font-size: 40px;
+
 }
 a{
     text-decoration: none;
     color: aliceblue;
+    margin: 70px;
+    text-transform: uppercase;
 }
 a:hover
 {
@@ -35,5 +42,14 @@ a:hover
 p{
     text-align: center;
     font-family: monospace;
+    font-size: large;
 }
-
+.logo {
+height: 200px;  
+margin-left: 840px;
+}
+table {
+    height: 120px;
+    text-align: center;
+    background-color: aqua;
+}

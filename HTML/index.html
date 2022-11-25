@@ -12,24 +12,32 @@
 <body>
     <div id="app">
         <header>    
-            <router-link to="/">Acceuil</router-link>
+         <ul>
+           <li><router-link to="/">Acceuil</router-link></li>
        
-            <router-link to="/create">Création</router-link>
-            
+           <li><router-link to="/create">Création</router-link></li>
+        </ul> 
         </header> 
 
         <main>
             <h1>L'encyclopédie</h1> 
-            <img src="../DESIGN/Blanc_et_Noir_Montagne_Net_et_Moderne_Église_Logo__1_-removebg-preview.png">
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <img src="../DESIGN/Blanc_et_Noir_Montagne_Net_et_Moderne_Église_Logo__1_-removebg-preview.png" class="logo">
+            <p>Retrouvez ici nos notre encyclopédie, ou nous pourrons retrouver toutes les villes de France,<br>les détails la concernant, ainsi que son Histoire.</p>
             <router-view @add-article="addarticle"> </router-view> <!--Affichage de la page-->
             
-            
-            
-        </main>
+ </main>
 
 
+ <table>
+    <tr>
+        <td><img src="https://www.letelegramme.fr/images/2021/02/08/vannes-beneficie-des-aides-de-l-etat-dans-le-cadre-du-plan_5524054_676x337p.jpg?v=1" /></td>
+        <td><img src="https://img.20mn.fr/l9O92uPMScSu2sAdrR7m8Sk/1200x768_ville-vannes-annule-defile-fetes-historiques-raison-canicule"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://img.20mn.fr/l9O92uPMScSu2sAdrR7m8Sk/1200x768_ville-vannes-annule-defile-fetes-historiques-raison-canicule" /></td>
+        <td><img src="https://www.bretagne.com/sites/default/files/post/Vannes_S.jpg"/></td>
 
+</table>
 
 
 

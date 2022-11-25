@@ -9,7 +9,7 @@ header  {
     -moz-border-radius: 25px;
     border-radius: 25px;*/
     border-radius: 35px;
-    background: linear-gradient(145deg, #f0e1e1, #cabdbd);
+    background: linear-gradient(145deg, #cec1c1, #a59b9b);
     box-shadow:  7px 7px 13px #8a8a8a,
              -7px -7px 13px #ffffff;
     margin: 10px;
@@ -96,7 +96,7 @@ table {
   
     
     border-radius: 35px;
-    background: linear-gradient(145deg, #f0e1e1, #cabdbd);
+    background: linear-gradient(145deg, #cec1c1, #a59b9b);
     box-shadow:  7px 7px 13px #8d8484,
              -7px -7px 13px #ffffff;
     width : 150px;

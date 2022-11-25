@@ -59,7 +59,7 @@ ul {
     color: rgb(116, 117, 119);
 }
 html{
-    background-color: rgb(224, 210, 210);
+    background-color: rgb(241, 238, 238);
 }
 h1{
     
@@ -74,7 +74,7 @@ h1{
 }
 a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(33, 102, 163);
     margin: 70px;
     text-transform: uppercase;
 }
@@ -87,6 +87,8 @@ p{
     text-align: center;
     font-family: monospace;
     font-size: large;
+    padding-bottom: 30px;
+    font-size: 20px;
 }
 .logo {
 height: 300px;  
@@ -144,7 +146,7 @@ tr{
 
 #img2{
     width : 500px;
-    height : auto;
+    height : 290px;
     margin: 20px;
     border-radius: 35px;
 }
@@ -177,4 +179,13 @@ tr{
 #nomPrenomGroupe{
     font-size: 15px;
     font-family: monospace;
+}
+#Text-Article{
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+#auteur {
+    text-align: right;
+    margin-right: 240px;
 }

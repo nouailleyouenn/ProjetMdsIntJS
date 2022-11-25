@@ -8,8 +8,10 @@ const articlePage= {
     
     <div id="Text-Article" > {{$route.params.texte}}</div>
     <br>
+    <div id="auteur">
     <div style="display: inline">  Auteur : {{$route.params.auteur}}</div>
     <a v-bind:href="urls" style="display: inline"> Source </a>
+    </div>
     
     <br>
     <br>

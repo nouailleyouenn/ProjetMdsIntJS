@@ -1,10 +1,28 @@
 header  {
     background-color: rgb(158, 158, 154);
+    
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly flex-start;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    
 
 
 }
+
+#header-column-droite{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header-column-gauche{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
 li{
 
 
@@ -14,6 +32,7 @@ ul {
     padding: 20px;
     margin: 0;
     display: flex;
+    justify-content: center;
     
  }
 

@@ -5,7 +5,7 @@ const creation= {
     //template de la page creation et du formulaire
         template: `
     
-    <div>
+    <div id="TitreSection">
         creation
     </div>
     

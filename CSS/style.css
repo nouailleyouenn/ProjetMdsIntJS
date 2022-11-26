@@ -82,6 +82,7 @@ a:hover
 {
     color : black;
     transition: color 1s ease 0s;
+    font-size: 110%;
 }
 p{
     text-align: center;

@@ -1,13 +1,11 @@
-header  {
-    /*background-color: rgb(158, 158, 154);*/
-    
+html {
+  background-color: #e0d2d2;
+}
+header {
     display: flex;
     justify-content: space-evenly flex-start;
     align-items: stretch;
     flex-direction: column;
-    /*-webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;*/
     border-radius: 35px;
     background: linear-gradient(145deg, #cec1c1, #a59b9b);
     box-shadow:  7px 7px 13px #8a8a8a,

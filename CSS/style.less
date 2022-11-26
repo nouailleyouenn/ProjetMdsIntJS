@@ -1,4 +1,5 @@
-@BackgroundColor : @BackgroundColorWhite;
+//Selecteur
+@BackgroundColor : @BackgroundColorWhite;  //@BackgroundColorWhite si thème blanc, @BackgroundColorBlack si thème noir
 
 
 
@@ -84,6 +85,7 @@ ul {
 h1{
     
     font-family: @FontFamily;
+    color : @textColor;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -109,7 +111,13 @@ a:hover{
 p{
     text-align: center;
     font-family: @FontFamily;
+    color:@textColor;
     font-size: large;
+}
+
+div{
+    font-family: @FontFamily;
+    color:@textColor;
 }
 
 .logo {

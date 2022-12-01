@@ -1,5 +1,9 @@
 const creation= {
-    
+    data(){
+        return{
+            name:'',categorie:'',text:'',auteur:'',url:'',image:''
+        }
+    },
 
 
     //template de la page creation et du formulaire

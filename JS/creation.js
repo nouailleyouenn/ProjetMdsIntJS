@@ -20,6 +20,7 @@ const creation= {
                         <option value="images">Images</option>
                         <option value="monde">Monde</option>
                         <option value="blog">Blog</option>
+                        <option value="Ville Connue">Ville Connue</option>
                     </select>   
                 <label for="text" >Texte :</label>
                     <textarea id="text" v-model="text"></textarea>

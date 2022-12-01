@@ -1,0 +1,210 @@
+//Selecteur
+@BackgroundColor : @BackgroundColorWhite;  //@BackgroundColorWhite si thème blanc, @BackgroundColorBlack si thème noir
+
+
+
+
+//Constante
+@BackgroundColorWhite : rgb(224, 210, 210);
+@BackgroundColorBlack : rgb(59, 59, 59);
+@BoxShadowLight:7px 7px 13px #8a8a8a, -7px -7px 13px #ffffff;
+@BoxShadowDark:7px 7px 13px #2d2d2d, -7px -7px 13px #494949;
+@BoxShadow : if(@BackgroundColorLight, @BoxShadowLight,@BoxShadowDark);
+@BorderRadius:35px;
+@LightColorLightShadow : #cec1c1;
+@LightColorDarkShadow : darken(@LightColorLightShadow,30%);
+@DarkColorLightShadow : lighten(@DarkColorDarkShadow,30%);
+@DarkColorDarkShadow : #020202;
+@FontFamily : monospace;
+@textColor : if(@BackgroundColorLight,rgb(31, 31, 32), rgb(223, 239, 253));
+@textHoverColor: if(@BackgroundColorLight,rgb(225, 245, 253),rgb(29, 183, 230));
+
+
+//Fonctions
+@BackgroundColorLight : boolean(luma(@BackgroundColor)>50%);
+@LightColorShadow:if(@BackgroundColorLight,@LightColorLightShadow,@DarkColorLightShadow);
+@DarkColorShadow:if(@BackgroundColorLight,@LightColorDarkShadow,@DarkColorDarkShadow);
+
+
+html {
+    background-color: @BackgroundColor;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-evenly flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: @BorderRadius;
+    background: linear-gradient(145deg,@LightColorShadow,@DarkColorShadow );
+    box-shadow: @BoxShadow;
+    margin: 10px;
+    //padding-inline: 100px;
+}
+
+.header-up{
+    display: flex;
+    
+    justify-content:  center;
+    
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.header-column-droite{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-column-gauche{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-left: -100px;
+}
+
+li{
+    text-transform : capitalize;
+
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h1{
+    
+    font-family: @FontFamily;
+    color : @textColor;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: @textColor ;
+    margin: 70px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color : @textHoverColor;
+    transition: color 1s ease 0s;
+    
+}
+
+p{
+    text-align: center;
+    font-family: @FontFamily;
+    color:@textColor;
+    font-size: large;
+}
+
+div{
+    font-family: @FontFamily;
+    color:@textColor;
+}
+
+.logo {
+    height: 300px;  
+    margin-left: 820px;
+}
+
+table {
+    border-radius: @BorderRadius;
+    background: linear-gradient(145deg,@LightColorShadow,@DarkColorShadow );
+    box-shadow: @BoxShadow;
+    width : 150px;
+    height : 150px;
+}
+
+tr{
+    size: 120px;
+}
+
+.TitreSection{
+    font-size: 40px;
+    font-family: @FontFamily;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TitreSection-Article{
+    font-size: 30px;
+    font-family: @FontFamily;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CategorieArticle{
+    font-size: 20px;
+    font-family: @FontFamily;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.Text-Article{
+    font-family: @FontFamily;
+    font-size: 15px;
+}
+
+.source-article{
+    display: inline;
+}
+
+
+.img2{
+    width : 500px;
+    height : auto;
+    margin: 20px;
+    border-radius: 35px;
+}
+
+.img3{
+    width : 500px;
+    height : auto;
+    border-radius: 35px;
+}
+
+.image-article{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.TableauHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nomPrenomGroupeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nomPrenomGroupe{
+    font-size: 15px;
+    font-family: @FontFamily
+}

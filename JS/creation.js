@@ -5,9 +5,7 @@ const creation= {
     //template de la page creation et du formulaire
         template: `
     
-    <div id="TitreSection">
-        creation
-    </div>
+    
     
     <form @submit.prevent="onSubmit" class="CreateForm">
                 <h3>Creer un article</h3>

@@ -11,28 +11,38 @@ const creation= {
     
     
     
-    <form @submit.prevent="onSubmit" class="CreateForm">
+    <form @submit.prevent="onSubmit" class="global-form">
+                <div class="TitreSection">
                 <h3>Creer un article</h3>
-                <label for="name">Nom:</label>
-                    <input id="name" v-model="name" autocomplete="test">
-                <label for="categorie">Catégorie :</label>
-                    <select v-model="categorie" id="categorie">
-                        <option value="">--Choisir une catégorie--</option>
-                        <option value="news">News</option>
-                        <option value="images">Images</option>
-                        <option value="monde">Monde</option>
-                        <option value="blog">Blog</option>
-                        <option value="Ville Connue">Ville Connue</option>
-                    </select>   
-                <label for="text" >Texte :</label>
-                    <textarea id="text" v-model="text"></textarea>
-                <label for="auteur" >Auteur :</label>
-                    <textarea id="auteur" v-model="auteur"></textarea>
-                <label for="url" >Url source :</label>
-                    <textarea id="url" v-model="url"></textarea>
-                <label for="image" >Image Url :</label>
-                    <textarea id="image" v-model="image"></textarea>
-                <input class="button" type="submit" value="Valider"  >
+                </div>
+                <div class="form-nom">
+                <input class="name" v-model="name" placeholder="Name">
+                </div>
+                <div class="form-catégorie">
+                <select v-model="categorie" id="categorie">
+                    <option value="">--Choisir une catégorie--</option>
+                    <option value="news">News</option>
+                    <option value="images">Images</option>
+                    <option value="monde">Monde</option>
+                    <option value="blog">Blog</option>
+                    <option value="Ville Connue">Ville Connue</option>
+                </select>
+                </div>
+                <div class="form-Texte">
+                <textarea id="text" v-model="text" placeholder="Texte"></textarea>
+                </div>
+                <div class="form-auteur">
+                <textarea id="auteur" v-model="auteur" placeholder="Auteur"></textarea>
+                </div>
+                <div class="form-url-source">
+                <textarea id="url" v-model="url" placeholder="Url source"></textarea>
+                </div>
+                <div class="form-url-image">
+                <textarea id="image" v-model="image" placeholder="url image"></textarea>
+                </div>
+                <div class="button-valider-div">
+                <input class="button-valider" type="submit" value="Valider"  >
+                </div>
             </form>
     
     `,

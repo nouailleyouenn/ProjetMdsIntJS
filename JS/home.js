@@ -3,14 +3,13 @@ const Home = {
     template: `
 
 <div class="TitreSection">
-    <div>Home</div>
+    <h3>Home</h3>
 </div>
 <div class="listeArticlesHome" v-on="ListeArticles">
-    <ul>
-    <li v-for="article in articles" >
+    
+    <div v-for="article in articles">
         <router-link :to="{name:'articleDesc',params:{id:articles.indexOf(article),name:article.name,categorie:article.categorie,texte:article.texte,auteur:article.auteur,url:article.url,image:article.image}}">{{article.name}}</router-link>
-    </li>
-    </ul>
+    </div>
 </div>
 <div>
 <router-view></router-view>

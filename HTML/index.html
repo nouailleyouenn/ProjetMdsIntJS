@@ -8,33 +8,41 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
         <!--<link rel="stylesheet" href="../CSS/style.css">-->
-    <link rel="stylesheet/less" type="text/css" href="../CSS/style.less" />
-    <script src = "../JS/less.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/style2.css" />
+    <!-- <script src = "../JS/less.js"></script> -->
        
 </head>
 <body>
     <div id="app">
         <header>
-            <div class="header-up">
+            
             <div class="header-column-gauche">
                 <img src="../DESIGN/Blanc_et_Noir_Montagne_Net_et_Moderne_Église_Logo__1_-removebg-preview.png" class="logo">
             </div>
-            <div id="header-column-droite">  
+
+            <div id="header-column-droite"> 
+                <div class="header-titre">
                 <h1>L'Encyclopédie</h1>
-                 
-                <ul>
-                    <li><router-link to="/">Acceuil</router-link></li>
+                </div>
+                <div class="header-menu">
+                <router-link class="linkHeader" to="/">Acceuil</router-link>
            
-                    <li><router-link to="/create">Création</router-link></li>
-                </ul>    
+                <router-link class="linkHeader" to="/create">Création</router-link> 
+                </div>  
             </div>
+
+            <div class="header-column-none">
+
             </div>
-            <div class="header-down">
+          
+            
 
             
-            <p>Retrouvez ici nos notre encyclopédie, ou nous pourrons retrouver toutes les villes de France,<br>les détails la concernant, ainsi que son Histoire.</p>
-            </div>
+            
+            
         </header> 
+
+        <p>Retrouvez ici nos notre encyclopédie, ou nous pourrons retrouver toutes les villes de France,<br>les détails la concernant, ainsi que son Histoire.</p>
 
         <main>
              

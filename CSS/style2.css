@@ -2,6 +2,7 @@ body {
     background: linear-gradient(-45deg,rgb(208, 0, 153),rgb(1, 1, 79) 70%);
     min-height:1000px;
 }
+/* header section*/
 header {
 
     display: flex;
@@ -49,6 +50,8 @@ a:visited{
     text-decoration-color: pink;
 
 }
+
+/*bordel*/
 p{
     display: flex;
     align-items: center;
@@ -110,6 +113,8 @@ table{
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.308);
     margin: 50px;
 }
+
+/*footer*/
 .nomPrenomGroupeContainer{
     color: white;
     font-family:"Montserrat",sans-serif ;
@@ -144,6 +149,8 @@ a:hover{
 a{  
     transition : 0.5s;
 }
+
+/*form*/
 .global-form{
     color:white;
     border-radius: 50px;
@@ -254,6 +261,8 @@ textarea:focus, select:focus,.name:focus{
     justify-content: center;
     align-items: center;
 }
+
+/*reste*/
 a{
     font-family: "Montserrat",sans-serif;
     color: white;

@@ -2,7 +2,6 @@ body {
     background: linear-gradient(-45deg,rgb(208, 0, 153),rgb(1, 1, 79) 70%);
     min-height:1000px;
 }
-
 header {
 
     display: flex;
@@ -15,7 +14,6 @@ header {
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.308);
     
 }
-
 .header-column-droite {
     display: flex;
     flex-direction: column;
@@ -33,9 +31,6 @@ header {
     margin: 10px;
     padding: 15px;
 }
-
-
-
 .header-menu{
     display: flex;
     flex-direction: row;
@@ -44,23 +39,16 @@ header {
     color: white;
 
 }
-
-
-
-
 .logo{
     width: 100px;
 
 }
-
-
 a:visited{
     color: white;
     text-decoration: underline;
     text-decoration-color: pink;
 
 }
-
 p{
     display: flex;
     align-items: center;
@@ -69,7 +57,6 @@ p{
     font-family: "Montserrat",sans-serif;
     color: white;
 }
-
 .TitreSection{
     color: white;
     font-family: "Montserrat",sans-serif;
@@ -79,7 +66,6 @@ p{
     justify-content: center;
 
 }
-
 .listeArticlesHome{
     color: white;
     font-family:"Montserrat",sans-serif ;
@@ -93,7 +79,6 @@ p{
     margin-left: 400px;
     margin-right: 400px;
 }
-
 .img2{
     width: 400px;
     
@@ -101,11 +86,9 @@ p{
     border: 1px;
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.221);
 }
-
 td{
     padding: 10px;
 }
-
 .TableauHome{
     display: flex;
     justify-content: center;
@@ -113,7 +96,6 @@ td{
     
 
 }
-
 tr{
     display: flex;
     align-items: center;
@@ -121,7 +103,6 @@ tr{
     justify-content: space-around;
 
 }
-
 table{
     background-color: rgba(173, 173, 173, 0.17);
     border-radius: 15px;
@@ -129,8 +110,6 @@ table{
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.308);
     margin: 50px;
 }
-
-
 .nomPrenomGroupeContainer{
     color: white;
     font-family:"Montserrat",sans-serif ;
@@ -139,46 +118,32 @@ table{
     justify-content: center;
 
 }
-
 .nomPrenomGroupe:hover{
     box-shadow: 0px 0px 15px 5px blue;
     background-color: blue;
     transition : 0.5s;
 }
-
 .nomPrenomGroupe{
     box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0);
     transition : 0.5s;
 }
-
-
 .linkHeader:hover{
     box-shadow: 0px 0px 15px 10px blue;
     background-color: blue;
     transition : 0.5s;
 }
-
 .linkHeader{  
     transition : 0.5s;
 }
-
-
-
-
 a:hover{
     box-shadow: 0px 0px 15px 10px blue;
     background-color: blue;
     transition : 0.5s;
 }
-
 a{  
     transition : 0.5s;
 }
-
-
-
-
 .global-form{
     color:white;
     border-radius: 50px;
@@ -194,15 +159,10 @@ a{
     padding-bottom: 30px;
 
 }
-
-
-
-
 textarea::placeholder, select::placeholder,.name::placeholder{
     color:rgba(255, 255, 255, 0.447);
     font-size: 10px; 
 }
-
 textarea, select,.name,option{
     border:1px solid rgba(255, 0, 0, 0);
     border-radius: 5px;
@@ -215,7 +175,6 @@ textarea, select,.name,option{
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
     transition: 0.5s; 
 }
-
 textarea:focus, select:focus,.name:focus{
     border-color: #ffffff00;
     outline: none !important;
@@ -223,8 +182,6 @@ textarea:focus, select:focus,.name:focus{
     border:0px solid rgba(255, 0, 0, 0);
     transition: 0.5s;
 }
-
-
 .button-valider-div{
     display:flex;
     justify-content: center;
@@ -232,7 +189,6 @@ textarea:focus, select:focus,.name:focus{
     
 
 }
-
 .button-valider{
     border-radius: 5px;
     padding: 5px;
@@ -242,7 +198,6 @@ textarea:focus, select:focus,.name:focus{
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.192);
     transition:500ms;
 }
-
 .button-valider:hover{
     border-radius: 5px;
     padding: 10px;
@@ -250,7 +205,6 @@ textarea:focus, select:focus,.name:focus{
     border-color: #ffffff00;
     transition:500ms;
 }
-
 .TitreSection-Article{
     display: flex;
     align-items: center;
@@ -259,7 +213,6 @@ textarea:focus, select:focus,.name:focus{
     color:white;
     font-weight: 600;
 }
-
 .CategorieArticle{
     display: flex;
     align-items: center;
@@ -268,7 +221,6 @@ textarea:focus, select:focus,.name:focus{
     color:white;
     font-weight: 400;
 }
-
 .Text-Article{
     color: white;
     font-family: "Montserrat",sans-serif;
@@ -280,18 +232,15 @@ textarea:focus, select:focus,.name:focus{
     justify-content: center;
 
 }
-
 .auteur,.source{
     color: white;
     font-family: "Montserrat",sans-serif;
 }
-
 .auteur-div{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .img3{
     width: 400px;
     
@@ -300,14 +249,11 @@ textarea:focus, select:focus,.name:focus{
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.221);
     
 }
-
 .image-article{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 a{
     font-family: "Montserrat",sans-serif;
     color: white;
